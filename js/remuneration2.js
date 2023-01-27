@@ -151,6 +151,8 @@ function recupValeur(id) {
     }
 }
 
+
+
 /*
 
 function recupPrimeAnciennete(nb) {
