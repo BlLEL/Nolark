@@ -127,13 +127,25 @@ function gestionNbAccidents(nbAccidents, primeAnnuelleSansAccident, primeAnnuell
                 + ' € alors qu\'elle aurait pu être de '
                 + primeAnnuelleSansAccident + ' € sans ' + nbAccidents
                 + ' accident responsable...';
-    } else {
+    } else if (nbAccidents > 2 ) {
         elH2.innerHTML = 'Votre prime sera de ' + primeAnnuelle
                 + ' € alors qu\'elle aurait pu être de '
                 + primeAnnuelleSansAccident + ' € sans ' + nbAccidents
-                + ' accidents responsables...';
+                + ' accidents responsables... 316 ROUTIERS ONT FINIS BLESSER EN 2022 A CAUSE DE CES ACCIDENTS ! Faites Attention !! ';
+    
+    }
+    else {
+        elH2.innerHTML = 'Votre prime sera de ' + primeAnnuelle
+                + ' € alors qu\'elle aurait pu être de '
+                + primeAnnuelleSansAccident + ' € sans ' + nbAccidents
+                + ' accidents responsables...  ';
     }
 }
+
+/**
+ * document.getElementById("sensibilisation").innerHTML = '<iframe width="560" height="315" src="https://www.youtube.com/embed/gpNMrcgiAdw" title="YouTube video player" frameborder="0" \n\
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+ */
 /**
  * Fonction qui retourne un entier depuis une valeur prise dans le DOM et qui replace le
  * champ à 0 si la valeur saisie n'est pas un nombre
